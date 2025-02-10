@@ -19,5 +19,9 @@ app.post("/save-name", (req, res) => {
     res.json({ message: "Names saved successfully!" });
 });
 
+app.get("/", (req, res) => {
+    res.send("Server is running!");
+});
+
 app.listen(3000, () => console.log("Server running on port 3000"));
 
